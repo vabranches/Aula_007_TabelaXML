@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		43FB04021E380C77002596DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB04011E380C77002596DB /* AppDelegate.swift */; };
-		43FB04041E380C77002596DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB04031E380C77002596DB /* ViewController.swift */; };
 		43FB04071E380C77002596DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43FB04051E380C77002596DB /* Main.storyboard */; };
 		43FB04091E380C77002596DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43FB04081E380C77002596DB /* Assets.xcassets */; };
 		43FB040C1E380C77002596DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43FB040A1E380C77002596DB /* LaunchScreen.storyboard */; };
+		43FB04141E380CD7002596DB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB04131E380CD7002596DB /* TableViewController.swift */; };
+		43FB04161E380E9C002596DB /* MeuParseDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB04151E380E9C002596DB /* MeuParseDelegate.swift */; };
+		43FB04181E380FA8002596DB /* MeuParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB04171E380FA8002596DB /* MeuParser.swift */; };
+		43FB041A1E381AE4002596DB /* dados.xml in Resources */ = {isa = PBXBuildFile; fileRef = 43FB04191E381AE4002596DB /* dados.xml */; };
+		43FB041D1E381BC7002596DB /* celulaPersonalizada.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43FB041C1E381BC7002596DB /* celulaPersonalizada.xib */; };
+		43FB041F1E381CCE002596DB /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FB041E1E381CCE002596DB /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		43FB03FE1E380C77002596DB /* Aula_007_TabelaXML.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aula_007_TabelaXML.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43FB04011E380C77002596DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		43FB04031E380C77002596DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		43FB04061E380C77002596DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		43FB04081E380C77002596DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		43FB040B1E380C77002596DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		43FB040D1E380C77002596DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43FB04131E380CD7002596DB /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewController.swift; path = ../TableViewController.swift; sourceTree = "<group>"; };
+		43FB04151E380E9C002596DB /* MeuParseDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeuParseDelegate.swift; sourceTree = "<group>"; };
+		43FB04171E380FA8002596DB /* MeuParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeuParser.swift; sourceTree = "<group>"; };
+		43FB04191E381AE4002596DB /* dados.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = dados.xml; sourceTree = "<group>"; };
+		43FB041C1E381BC7002596DB /* celulaPersonalizada.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = celulaPersonalizada.xib; sourceTree = "<group>"; };
+		43FB041E1E381CCE002596DB /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,27 @@
 		43FB04001E380C77002596DB /* Aula_007_TabelaXML */ = {
 			isa = PBXGroup;
 			children = (
+				43FB041B1E381B86002596DB /* Celula Personalizada */,
+				43FB04191E381AE4002596DB /* dados.xml */,
 				43FB04011E380C77002596DB /* AppDelegate.swift */,
-				43FB04031E380C77002596DB /* ViewController.swift */,
+				43FB04131E380CD7002596DB /* TableViewController.swift */,
 				43FB04051E380C77002596DB /* Main.storyboard */,
 				43FB04081E380C77002596DB /* Assets.xcassets */,
 				43FB040A1E380C77002596DB /* LaunchScreen.storyboard */,
 				43FB040D1E380C77002596DB /* Info.plist */,
+				43FB04151E380E9C002596DB /* MeuParseDelegate.swift */,
+				43FB04171E380FA8002596DB /* MeuParser.swift */,
 			);
 			path = Aula_007_TabelaXML;
+			sourceTree = "<group>";
+		};
+		43FB041B1E381B86002596DB /* Celula Personalizada */ = {
+			isa = PBXGroup;
+			children = (
+				43FB041C1E381BC7002596DB /* celulaPersonalizada.xib */,
+				43FB041E1E381CCE002596DB /* TableViewCell.swift */,
+			);
+			name = "Celula Personalizada";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +148,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				43FB040C1E380C77002596DB /* LaunchScreen.storyboard in Resources */,
+				43FB041D1E381BC7002596DB /* celulaPersonalizada.xib in Resources */,
 				43FB04091E380C77002596DB /* Assets.xcassets in Resources */,
 				43FB04071E380C77002596DB /* Main.storyboard in Resources */,
+				43FB041A1E381AE4002596DB /* dados.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +162,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				43FB04041E380C77002596DB /* ViewController.swift in Sources */,
+				43FB041F1E381CCE002596DB /* TableViewCell.swift in Sources */,
 				43FB04021E380C77002596DB /* AppDelegate.swift in Sources */,
+				43FB04161E380E9C002596DB /* MeuParseDelegate.swift in Sources */,
+				43FB04181E380FA8002596DB /* MeuParser.swift in Sources */,
+				43FB04141E380CD7002596DB /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
